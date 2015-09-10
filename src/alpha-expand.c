@@ -110,6 +110,10 @@ void copy_nearests(ivec2* nearests, unsigned char* pixels, unsigned width,
 int main(int argc, char* argv[]) {
 	if (argc < 2) {
 		printf("No images specified.\n");
+
+		printf("Press ENTER to continue...\n");
+		while(getchar() != '\n');
+
 		exit(EXIT_FAILURE);
 	}
 
